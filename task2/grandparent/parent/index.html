@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="header__logo">
+				<a href="http://kubsu.ru" target="_black">
+					<img src="kubsulogo.png" alt="">
+				</a>
+			</div>
+			<div class="header_body">
+				<nav class="navigation">
+					<div class="navigation__link">
+						<a href="#">Ссылка 1</a>
+					</div>
+					<div class="navigation__link">
+						<a href="#">Ссылка 2</a>
+					</div>
+					<div class="navigation__link">
+						<a href="#">Ссылка 3</a>
+					</div>
+				</nav>
+				<div class="header__title">Название сайта</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="notgoodlayout">
+				<ul style="display: block">
+					<li>
+						<a href="http://kubsu.ru">kubsu.ru (HTTP)</a>
+					</li>
+
+					<li>
+						<a href="https://kubsu.ru">kubsu.ru (HTTPS)</a>
+					</li>
+
+					<li>
+						<a href="https://kubsu.ru">
+							<img src="kubsulogo.png" alt="KubSU Logo" width="150">
+						</a>
+					</li>
+
+					<li>
+						<a href="/about.html">Сокращенная ссылка на внутреннюю страницу</a>
+					</li>
+
+					<li>
+						<a href="/">Сокращенная ссылка на главную страницу</a>
+					</li>
+
+					<li>
+						<a href="#fragment-target">Ссылка на фрагмент этой страницы</a>
+					</li>
+
+					<li>
+						<a href="https://example.com/search?q=query&sort=date&page=1">Ссылка с тремя параметрами (q,
+							sort,
+							page)</a>
+					</li>
+
+					<li>
+						<a href="https://example.com/user?id=12345">Ссылка с параметром id</a>
+					</li>
+
+					<li>
+						<a href="page.html">Относительная ссылка (текущий каталог)</a>
+					</li>
+
+					<li>
+						<a href="about/contact.html">Относительная ссылка (каталог about)</a>
+					</li>
+
+					<li>
+						<a href="../parent.html">Относительная ссылка (каталог выше)</a>
+					</li>
+
+					<li>
+						<a href="../../grandparent.html">Относительная ссылка (два уровня выше)</a>
+					</li>
+
+					<li>
+						<p>Это абзац текста, в котором есть <a href="https://kubsu.ru">контекстная ссылка</a> на сайт
+							КубГУ.</p>
+					</li>
+
+					<li>
+						<a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/a#атрибуты">Ссылка на фрагмент
+							MDN
+							(раздел "Атрибуты")</a>
+					</li>
+
+					<li>
+						<img src="kubsulogo.png" alt="Image Map Example" usemap="#examplemap" width="300" height="300">
+						<map name="examplemap">
+							<area shape="rect" coords="0,0,150,100" href="https://kubsu.ru" alt="KubSU Rect Area">
+							<area shape="circle" coords="225,50,30" href="https://kubsu.dev"
+								alt="KubSU Dev Circle Area">
+						</map>
+					</li>
+
+					<li>
+						<a href="">Ссылка с пустым href</a>
+					</li>
+
+					<li>
+						<a>Ссылка без href</a>
+					</li>
+
+					<li>
+						<a href="https://kubsu.ru" rel="nofollow">Ссылка с rel="nofollow"</a>
+					</li>
+
+					<li>
+						<a href="https://kubsu.ru" rel="noindex">Ссылка с rel="noindex"</a>
+					</li>
+
+					<li>
+						<ol>
+							<li><a href="https://kubsu.ru" title="Официальный сайт КубГУ">КубГУ</a></li>
+							<li><a href="https://kubsu.dev" title="Разработчики КубГУ">KubSU Dev</a></li>
+						</ol>
+					</li>
+
+					<li>
+						<a href="ftp://user:password@ftp.example.com/file.txt">FTP ссылка с авторизацией</a>
+					</li>
+				</ul>
+
+				<table class="main__table table">
+					<tr class="table__row row odd">
+						<td class="row__cell cell" colspan="3">Something</td>
+						<td class="row__cell cell">Something</td>
+						<td class="row__cell cell">Something</td>
+						<td class="row__cell cell">Something</td>
+					</tr>
+					<tr class="table__row row even">
+						<td class="row__cell cell">Something</td>
+						<td class="row__cell cell">Something</td>
+						<td class="row__cell cell">Something</td>
+						<td class="row__cell cell">Something</td>
+						<td class="row__cell cell">Something</td>
+						<td class="row__cell cell">Something</td>
+					</tr>
+					<tr class="table__row row odd">
+						<td class="row__cell cell">Something</td>
+						<td class="row__cell cell">Something</td>
+						<td class="row__cell cell">Something</td>
+						<td class="row__cell cell">Something</td>
+						<td class="row__cell cell">Something</td>
+						<td class="row__cell cell">Something</td>
+					</tr>
+					<tr class="table__row row even">
+						<td class="row__cell cell">Something</td>
+						<td class="row__cell cell">Something</td>
+						<td class="row__cell cell">Something</td>
+						<td class="row__cell cell">Something</td>
+						<td class="row__cell cell">Something</td>
+						<td class="row__cell cell">Something</td>
+					</tr>
+				</table>
+
+				<div class="fragment"></div>
+				<p id="fragment-target">Вы достигли целевого фрагмента этой страницы!</p>
+				<div class="fragment"></div>
+			</div>
+			<h2>Форма HTML</h2>
+
+	<form action="/" method="POST">
+		<div class="field">
+			<input name="name1" placeholder="ФИО">
+		</div>
+		
+		<div class="field">
+			<input type="tel" name="name2" placeholder="Телефон">
+		</div>
+
+		<div class="field">
+			<input type="email" name="name3" placeholder="Email">
+		</div>
+
+		<div class="field">
+			<input type="date" name="name4">
+		</div>
+			
+		<div class="field">
+			<input type="radio" checked="checked" name="name5" value="man"> Мужской
+			<input type="radio" name="name5" value="woman"> Женский
+		</div>
+		
+		<div class="field">
+			<select name="name6" multiple="multiple">
+				<option value="Pascal">Pascal</option>
+				<option value="C">C</option>
+				<option value="C++">C++</option>
+				<option value="JavaScript">JavaScript</option>
+				<option value="PHP">PHP</option>
+				<option value="Python">Python</option>
+				<option value="Java">Java</option>
+				<option value="Haskel">Haskel</option>
+				<option value="Clojure">Clojure</option>
+				<option value="Prolog">Prolog</option>
+				<option value="Scala">Scala</option>
+			</select>
+		</div>
+		
+		<div class="field">
+			<textarea name="name7" placeholder="Биография"></textarea>
+		</div>
+
+		<div class="field">
+			<input type="checkbox" name="name8"> С контрактом ознакомлен
+		</div>
+
+		<div class="field">
+			<input type="submit" value="Сохранить">
+		</div>
+	</form>
+		</main>
+		<footer class="footer">
+			<div class="footer__copyright">&copy Владимир Жданов</div>
+		</footer>
+	</div>
+	<!--<ul style="display: block; padding-bottom: 1000px">
+		<li>
+			<a href="http://kubsu.ru">kubsu.ru (HTTP)</a>
+		</li>
+
+		<li>
+			<a href="https://kubsu.ru">kubsu.ru (HTTPS)</a>
+		</li>
+
+		<li>
+			<a href="https://kubsu.ru">
+				<img src="kubsulogo.png" alt="KubSU Logo" width="150">
+			</a>
+		</li>
+
+		<li>
+			<a href="/about.html">Сокращенная ссылка на внутреннюю страницу</a>
+		</li>
+
+		<li>
+			<a href="/">Сокращенная ссылка на главную страницу</a>
+		</li>
+
+		<li>
+			<a href="#fragment-target">Ссылка на фрагмент этой страницы</a>
+		</li>
+
+		<li>
+			<a href="https://example.com/search?q=query&sort=date&page=1">Ссылка с тремя параметрами (q, sort,
+				page)</a>
+		</li>
+
+		<li>
+			<a href="https://example.com/user?id=12345">Ссылка с параметром id</a>
+		</li>
+
+		<li>
+			<a href="page.html">Относительная ссылка (текущий каталог)</a>
+		</li>
+
+		<li>
+			<a href="about/contact.html">Относительная ссылка (каталог about)</a>
+		</li>
+
+		<li>
+			<a href="../parent.html">Относительная ссылка (каталог выше)</a>
+		</li>
+
+		<li>
+			<a href="../../grandparent.html">Относительная ссылка (два уровня выше)</a>
+		</li>
+
+		<li>
+			<p>Это абзац текста, в котором есть <a href="https://kubsu.ru">контекстная ссылка</a> на сайт КубГУ.</p>
+		</li>
+
+		<li>
+			<a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/a#атрибуты">Ссылка на фрагмент MDN
+				(раздел "Атрибуты")</a>
+		</li>
+
+		<li>
+			<img src="kubsulogo.png" alt="Image Map Example" usemap="#examplemap" width="300" height="300">
+			<map name="examplemap">
+				<area shape="rect" coords="0,0,150,100" href="https://kubsu.ru" alt="KubSU Rect Area">
+				<area shape="circle" coords="225,50,30" href="https://kubsu.dev" alt="KubSU Dev Circle Area">
+			</map>
+		</li>
+
+		<li>
+			<a href="">Ссылка с пустым href</a>
+		</li>
+
+		<li>
+			<a>Ссылка без href</a>
+		</li>
+
+		<li>
+			<a href="https://kubsu.ru" rel="nofollow">Ссылка с rel="nofollow"</a>
+		</li>
+
+		<li>
+			<a href="https://kubsu.ru" rel="noindex">Ссылка с rel="noindex"</a>
+		</li>
+
+		<li>
+			<ol>
+				<li><a href="https://kubsu.ru" title="Официальный сайт КубГУ">КубГУ</a></li>
+				<li><a href="https://kubsu.dev" title="Разработчики КубГУ">KubSU Dev</a></li>
+			</ol>
+		</li>
+
+		<li>
+			<a href="ftp://user:password@ftp.example.com/file.txt">FTP ссылка с авторизацией</a>
+		</li>
+	</ul>
+
+	<div class="fragment"></div>
+	<p id="fragment-target">Вы достигли целевого фрагмента этой страницы!</p>
+	<div class="fragment"></div>
+
+	<h2>Форма HTML</h2>
+
+	<form action="/" method="POST">
+		<div class="field">
+			<input name="name1" placeholder="ФИО">
+		</div>
+		
+		<div class="field">
+			<input type="tel" name="name2" placeholder="Телефон">
+		</div>
+
+		<div class="field">
+			<input type="email" name="name3" placeholder="Email">
+		</div>
+
+		<div class="field">
+			<input type="date" name="name4">
+		</div>
+			
+		<div class="field">
+			<input type="radio" checked="checked" name="name5" value="man"> Мужской
+			<input type="radio" name="name5" value="woman"> Женский
+		</div>
+		
+		<div class="field">
+			<select name="name6" multiple="multiple">
+				<option value="Pascal">Pascal</option>
+				<option value="C">C</option>
+				<option value="C++">C++</option>
+				<option value="JavaScript">JavaScript</option>
+				<option value="PHP">PHP</option>
+				<option value="Python">Python</option>
+				<option value="Java">Java</option>
+				<option value="Haskel">Haskel</option>
+				<option value="Clojure">Clojure</option>
+				<option value="Prolog">Prolog</option>
+				<option value="Scala">Scala</option>
+			</select>
+		</div>
+		
+		<div class="field">
+			<textarea name="name7" placeholder="Биография"></textarea>
+		</div>
+
+		<div class="field">
+			<input type="checkbox" name="name8"> С контрактом ознакомлен
+		</div>
+
+		<div class="field">
+			<input type="submit" value="Сохранить">
+		</div>
+	</form>-->
+</body>
+
+</html>
